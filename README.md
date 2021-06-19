@@ -7,4 +7,4 @@ donde podemos escuchar, el acelerar, el frenar de autos particulares, como de tr
 Abra el proyecto con Andorid Studio y corra la aplicacion en un dispositivo Android o un dispositivo Virtual (Emulador de Android).
 
 ### Emmanuel Morera Salas.
-### emmanueñ.morera@ucr.ac.cr
+### emmanuel.morera@ucr.ac.cr
