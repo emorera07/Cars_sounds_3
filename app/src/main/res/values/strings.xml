@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cars Sounds app</string>
+    <string name="bt_Aceleracion">Aceleración</string>
+    <string name="bt_bus_freno">Bus Frenando</string>
+    <string name="bt_carrera">Carro de carreras</string>
+    <string name="bt_camion_helado">Camión de helados</string>
+    <string name="bt_auto_fant">Auto Fantástico</string>
+    <string name="bt_frenar">Frenada</string>
+</resources>

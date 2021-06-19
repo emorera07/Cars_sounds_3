@@ -1,0 +1,62 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 211812352 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2877), pid=20956, tid=20965
+#
+# JRE version: OpenJDK Runtime Environment (11.0.8) (build 11.0.8+0-b944-P17168821)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.8+0-b944-6842174, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/emmanuel/AndroidStudioProjects/CarsSoundsapp/core.20956)
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country=CR -Duser.language=es -Duser.variant org.gradle.launcher.daemon.bootstrap.GradleDaemon 6.7.1
+
+Host: Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz, 4 cores, 3G, Ubuntu 18.04.5 LTS
+Time: Fri Jun 18 15:43:41 2021 CST elapsed time: 1075 seconds (0d 0h 17m 55s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f87f810e800):  VMThread "VM Thread" [stack: 0x00007f87e48a1000,0x00007f87e49a1000] [id=20965]
+
+Stack: [0x00007f87e48a1000,0x00007f87e49a1000],  sp=0x00007f87e499ee80,  free space=1015k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xc4399b]  VMError::report_and_die(int, char const*, char const*, __va_list_tag*, Thread*, unsigned char*, void*, void*, char const*, int, unsigned long)+0x75b
+V
+[timeout occurred during error reporting in step "printing native stack"] after 38 s.
+VM_Operation (0x00007f87d01c56f0): G1CollectForAllocation, mode: safepoint, requested by thread 0x00007f87f92ac000
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007f876c991270, length=29, elements={
+0x00007f87f8016800, 0x00007f87f8117000, 0x00007f87f811b800, 0x00007f87f8130800,
+0x00007f87f8132800, 0x00007f87f8134800, 0x00007f87f8136800, 0x00007f87f81c6800,
+0x00007f87f81cd800, 0x00007f87f92ac000, 0x00007f87f9316800, 0x00007f87f934b000,
+0x00007f878c016800, 0x00007f8788004000, 0x00007f8788007800, 0x00007f8788009000,
+0x00007f876c008800, 0x00007f876c019800, 0x00007f876c187000, 0x00007f876c18a000,
+0x00007f876c28b800, 0x00007f876c799000, 0x00007f876c4a1800, 0x00007f876c607000,
+0x00007f876c6f6800, 0x00007f876c695000, 0x00007f876c2ae800, 0x00007f876c9dc000,
+0x00007f876c990800
+}
+
+Java Threads: ( => current thread )
+  0x00007f87f8016800 JavaThread "main"
