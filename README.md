@@ -1,6 +1,8 @@
 # Cars_Sounds
-Se diseña una aplicación de Android para reproducir seis sonidos relacionados con los vehiculos terrestres,
-donde podemos escuchar, el acelerar, el frenar de autos particulares, como de transporte público, entre otros.
+Se diseña una aplicación de Android para reproducir una secuencia aleatoria de seis sonidos relacionados con los vehiculos terrestres,
+donde podemos escuchar, el acelerar, el frenar de autos particulares, como de transporte público, entre otros. 
+El usuario debe iniciar un boton de secuencia y cuando acaba, seguir la misma, desplegando si se siguiò de forma exitosa la 
+secuencia.
 
 
 ## Como correr
