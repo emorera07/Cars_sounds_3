@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">Cars Sounds app</string>
-    <string name="bt_Aceleracion">Aceleración</string>
-    <string name="bt_bus_freno">Bus Frenando</string>
-    <string name="bt_carrera">Carro de carreras</string>
-    <string name="bt_camion_helado">Camión de helados</string>
-    <string name="bt_auto_fant">Auto Fantástico</string>
-    <string name="bt_frenar">Frenada</string>
+    <string name="app_name">Simón dice app</string>
+    <string name="bt_inicio">Inicio</string>
+    <string name="bt_note_do">do</string>
+    <string name="bt_note_re">re</string>
+    <string name="bt_note_mi">mi</string>
+    <string name="bt_note_fa">fa</string>
+    <string name="bt_note_sol">sol</string>
+    <string name="bt_note_la">la</string>
+    <string name="bt_note_si">si</string>
+    <string name="bt_note_do_m">Do M</string>
 </resources>
